@@ -1,1 +1,1 @@
-hotfix branch, commit 2
+Release branch, commit 2
