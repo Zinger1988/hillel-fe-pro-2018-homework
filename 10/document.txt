@@ -1,1 +1,1 @@
-Develop <- hotfix branch <- Feature1, commit 1
+Release branch, commit 1
