@@ -1,1 +1,1 @@
-Feature2 branch, commit 1
+Feature2 branch, commit 2
