@@ -1,0 +1,11 @@
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+Desktop.ini
+
+$RECYCLE.BIN/
+
+node_modules
+test
+package-lock.json
