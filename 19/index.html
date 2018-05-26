@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Лекция 19. AJAX, Web-server</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- task description -->
+	<section class="task-description">
+		<div class="inner">
+			<h1>Лекция 19. AJAX, Web-server</h1>
+			<p>
+				Сформировать 2 запроса за разными txt файлами, которые лежат в корне проекта. Склеить текстовое содержимое файлов в переменную
+				str, вывести её на экран в div. Преобразовать str так, чтобы по указанному в input.replace[type=text] строке - произошла
+				замена всех совпадений в str на значение в input.value[type=text].
+			</p>
+			<code>
+				str = 'hgafofasf_foo_amsdnaskld_foo_asdasd'<br>
+				при введенном в replace = "foo" и value = "bar"<br>
+				newStr = 'hgafofasf_bar_amsdnaskld_bar_asdasd'
+			</code>
+		</div>
+	</section>
+	<!-- task description (end) -->
+
+	<!-- task body -->
+	<section class="task-body">
+		<input type="text" id="template" value="foo" placeholder="template">
+		<input type="text" id="value" placeholder="value">
+	</section>
+	<!-- task body (end)-->
+
+	<script src="js/task1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Лекция 14. DOM cобытия</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- wrapper -->
+	<div class="main-wrapper">
+
+	<!-- task description -->
+	<section class="task-description">
+		<div class="inner">
+			<h1>Лекция 14. DOM cобытия</h1>
+			<ol>
+				<li>Создать простейшую анимацию падения блока. Вверху окна мы имеем 3 блока, при нажатии на один из блоков - он плавно падает вниз окна. Остается внизу.</li>
+				<li>При нажатии на блок который находится внизу - он плавно поднимается вверх.</li>
+				<li>Добавить поле ввода для параметра speed, которое влияет на скорость анимации блоков из задания 1 и 2.</li>
+			</ol>
+		</div>
+	</section>
+	<!-- task description (end) -->
+
+	<!-- task body -->
+	<section class="task-body">
+
+		<div class="speed-field">
+			<span class="field-title">Скорость анимации (мс):</span>
+			<div class="field-input">
+				<input type="number" id="speed" value="1000" step="100">
+			</div>
+		</div>
+
+		<div class="square-wrapper">
+			<div class="square-inner">
+				<div class="square-item"></div>
+			</div>
+			<div class="square-inner">
+				<div class="square-item"></div>
+			</div>
+			<div class="square-inner">
+				<div class="square-item"></div>
+			</div>
+		</section>
+	</duv>
+	<!-- task body (end)-->
+
+	</div>
+	<!-- wrapper (end)-->
+
+	<script src="js/task1.js"></script>
+</body>
+</html>

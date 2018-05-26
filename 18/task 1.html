@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Лекция 18. Local Storage</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- task description -->
+	<section class="task-description">
+		<div class="inner">
+			<h1>Лекция 18. Local Storage</h1>
+			<p>Эмулируем работу корзины. В правом верхнем углу список набранных товаров (определяем по id). Товары расположены в ряд по центру. Создаем 5 разных типов товаров.</p>
+			<ul>
+				<li>Кнопка Add to cart</li>
+				<li>Кнопка Remove (из корзины)</li>
+				<li>Кнопка Remove All</li>
+				<li>При перезагрузке страницы прорисовываются ранее выбранные товары</li>
+			</ul>
+			<p>* При клике на товар, корзина прорисовывает список выбранных товаров</p>
+			<p>** Если товар уже ранее был выбран, то увеличивается счетчик - Товар "id 205" x2 штуки</p>
+		</div>
+	</section>
+	<!-- task description (end) -->
+
+	<!-- <div class="cart-list-item">
+		<span class="cart-list-name">Catalog item #1</span>
+		<span class="cart-list-quantity">2</span>
+		</div>
+		<div class="cart-list-item">
+			<span class="cart-list-name">Catalog item #2</span>
+			<span class="cart-list-quantity">1</span>
+		</div> -->
+
+		<!-- content -->
+		<main>
+
+			<div class="content">
+				<section class="cart-wrapper">
+					<h2>Корзина</h2>
+					<div class="cart-inner">
+						<div class="cart-list-item">
+							<div class="cart-list-item-inner">
+								<span class="cart-list-name">Catalog item #1</span>
+								<span class="cart-list-quantity">2</span>
+							</div>
+							<button type="button" class="remove-cart-item">Remove</button>
+						</div>
+						<div class="cart-list-item">
+							<div class="cart-list-item-inner">
+								<span class="cart-list-name">Catalog item #2</span>
+								<span class="cart-list-quantity">1</span>
+							</div>
+							<button type="button" class="remove-cart-item">Remove</button>
+						</div>
+						<button type="button" class="remove-all-cart-item">Remove all</button>
+					</div>
+					<div class="empty-cart">Корзина пуста</div>
+				</section>
+
+				<section class="catalog-wrapper">
+					<h2>Каталог товаров</h2>
+					<div class="catalog-inner">
+
+						<article class="catalog-item" data-id="1">
+							<a href="#" class="item-link">
+								<span class="item-img">image</span>
+								<span class="item-name">Catalog item #1</span>
+							</a>
+							<button type="button" class="cart-btn">Add to cart</button>
+						</article>
+
+						<article class="catalog-item" data-id="2">
+							<a href="#" class="item-link">
+								<span class="item-img">image</span>
+								<span class="item-name">Catalog item #2</span>
+							</a>
+							<button type="button" class="cart-btn">Add to cart</button>
+						</article>
+
+						<article class="catalog-item" data-id="3">
+							<a href="#" class="item-link">
+								<span class="item-img">image</span>
+								<span class="item-name">Catalog item #3</span>
+							</a>
+							<button type="button" class="cart-btn">Add to cart</button>
+						</article>
+
+						<article class="catalog-item" data-id="4">
+							<a href="#" class="item-link">
+								<span class="item-img">image</span>
+								<span class="item-name">Catalog item #4</span>
+							</a>
+							<button type="button" class="cart-btn">Add to cart</button>
+						</article>
+
+						<article class="catalog-item" data-id="5">
+							<a href="#" class="item-link">
+								<span class="item-img">image</span>
+								<span class="item-name">Catalog item #5</span>
+							</a>
+							<button type="button" class="cart-btn">Add to cart</button>
+						</article>
+
+					</div>
+				</section>
+			</div>
+
+		</main>
+		<!-- content (end)-->
+
+		<script src="js/task1.js" defer></script>
+	</body>
+	</html>

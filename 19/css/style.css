@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+}
+
+html,
+body
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	font: .875em/1.3 Arial, sans-serif;
+}
+
+.task-description
+{
+	margin: 0 0 40px 0;
+	padding: 20px 0;
+
+	border-bottom: 1px solid #bebebe;
+}
+
+.task-description .inner
+{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.task-description .code{
+	font-size: 1.142em;
+}
+
+.task-body{
+	text-align: center;
+}
+
+#template, #value{
+	display: inline-block;
+	width: 200px;
+	height: 34px;
+	border-radius: 2px;
+	border: 1px solid #cccccc;
+	padding: 0 15px;
+	transition: .2s;
+}
+
+#template:focus, #value:focus{
+	border: 1px solid #8b8b8b;
+}
+
+.target-string{
+	display: block;
+	width: 400px;
+	margin: 20px auto 0;
+}

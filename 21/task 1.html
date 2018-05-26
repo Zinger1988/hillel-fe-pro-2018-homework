@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Лекция 21. ES6-Array_methods_ES5</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- task description -->
+	<section class="task-description">
+		<div class="inner">
+			<h1>Лекция 19. AJAX, Web-server</h1>
+			<p>
+				Напиши функцию <code>fmap(do, list)</code>, которая принимает на вход функцию и массив,
+				<code>do, list</code>, где <code>list</code> - массив элементов, на которые применится функция <code>do</code>. fmap возвращает
+				новую функцию-генератор, которая при каждом вызове берет следующее значение из list и
+				пропускает его через функцию <code>do</code>. Пример:
+			</p>
+			<code>
+				function square(x) { return x * x; }<br>
+				var list = [1, 2, 3]<br>
+				var squareGen = fmap(square, list);<br>
+				<br>
+				console.log(squareGen.next()); // 1<br>
+				console.log(squareGen.next()); // 4<br>
+				console.log(squareGen.next()); // 9<br>
+				console.log(squareGen.next()); // undefined
+			</code>
+		</div>
+	</section>
+	<!-- task description (end) -->
+
+	<script src="js/task1.js"></script>
+</body>
+
+</html>

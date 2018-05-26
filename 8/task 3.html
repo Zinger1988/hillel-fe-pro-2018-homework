@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Лекция 8. Object, задание 3/3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- task description -->
+	<section class="task-description">
+		<div class="inner">
+			<h1>Лекция 8. Object, задание 3/3</h1>
+			<p>
+				Написать функцию assignObjects(obj1, obj2), которая принимает аргументами 2 обьекта и
+				возвращает новый, который состоит из свойство обоих обьектов (склеить).
+				Если свойство повторяется, то взять значение второго обьекта
+			</p>
+			<p>
+				<code class="code">
+					assignObjects({ x: 10, y: 20 }, { z: 30 }) -> { x:10, y:20, z: 30 }<br>
+					assignObjects({ x: 10 }, { x: 20, y: 30 }) - > { x:20, y: 30 }
+				</code>
+			</p>
+			<p>
+				<b>Дополнительно:</b><br>
+				Добавить 3ий аргумента flag, который является boolean. Если флаг true, тогда при наличии
+				свойства в обоих объектов в результат пойдет значение из первого обьекта, false - из второго.
+			</p>
+			<p>
+				<code class="code">
+					assignObjects({...}, {...}, false);
+				</code>
+			</p>
+			<p>
+				<b>Дополнительно:</b><br>
+				Cделать параметр flag не обязательный, если параметр не передать - устанавливать значение false.
+			</p>
+		</div>
+	</section>
+	<!-- task description (end) -->
+
+	<script src="js/task3.js"></script>
+</body>
+</html>

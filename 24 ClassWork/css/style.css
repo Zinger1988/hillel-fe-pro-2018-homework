@@ -1,0 +1,63 @@
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font: .75em/1.3 Arial, sans-serif;
+}
+
+.task-description
+{
+    margin: 0 0 40px 0;
+    padding: 20px 0;
+
+    border-bottom: 1px solid #bebebe;
+}
+
+.task-description .inner
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.task-description .code{
+    font-size: 1.142em;
+}
+
+.square-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 450px;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.square-inner{
+    width: 33.333%;
+    text-align: center;
+    position: relative;
+}
+
+.square-item{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #5fa7ff;
+    border: 2px solid #22599d;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    transform: translate(0,-50%);
+    cursor: pointer;
+    transition: all ease-out .2s;
+}
+
+.square-item.active{
+    top: 100%;
+    transform: translateX(-100%,-50%);
+}

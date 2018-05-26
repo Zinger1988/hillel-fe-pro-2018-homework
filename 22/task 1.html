@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- task description -->
+	<section class="task-description">
+		<div class="inner">
+			<h1>Лекция 22. ES6 Class</h1>
+			<p>
+				Реализуйте класс Elem, который параметром принимает селектор одного HTML
+				элемента и затем может выполнять с ним различные операции. Класс должен
+				работать следующим образом:
+			</p>
+			<code class="code">
+				var elem = new Elem('селектор');<br><br>
+
+				elem.html('!'); //запишет в текст элемента '!'<br>
+				elem.append('!'); //запишет в начало элемента '!'<br>
+				elem.prepend('!'); //запишет в конец элемента '!'<br>
+				elem.attr('class', 'www'); //запишет в атрибут class значение www<br><br>
+
+				//Должны работать цепочки методов:<br>
+				elem.html('hello').append('!').prepend('!');<br>
+				elem.attr('class', 'www').attr('title', 'hello');<br>
+			</code>
+		</div>
+	</section>
+
+	<section class="task-body">
+
+		<div class="text-center">
+			<div class="target">target element</div>
+		</div>
+
+		<div class="controls">
+
+			<label class="fake-radio">
+				<input type="checkbox" name="html">
+				<span class="fake-toggler"></span>
+				<span class="fake-radio-text">
+					<span class="fake-text-primary">elem.html('!');</span>
+					<span class="fake-text-secondary">Запишет в текст элемента '!'</span>
+				</span>
+			</label>
+
+			<label class="fake-radio">
+				<input type="checkbox" name="append">
+				<span class="fake-toggler"></span>
+				<span class="fake-radio-text">
+					<span class="fake-text-primary">elem.append('!');</span>
+					<span class="fake-text-secondary">Запишет в начало элемента '!'</span>
+				</span>
+			</label>
+
+			<label class="fake-radio">
+				<input type="checkbox" name="prepend">
+				<span class="fake-toggler"></span>
+				<span class="fake-radio-text">
+					<span class="fake-text-primary">elem.prepend('!');</span>
+					<span class="fake-text-secondary">Запишет в конец элемента '!'</span>
+				</span>
+			</label>
+
+			<label class="fake-radio">
+				<input type="checkbox" name="class">
+				<span class="fake-toggler"></span>
+				<span class="fake-radio-text">
+					<span class="fake-text-primary">elem.attr('class', 'www');</span>
+					<span class="fake-text-secondary">Запишет в атрибут class значение www</span>
+				</span>
+			</label>
+
+		</div>
+	</section>
+
+	<script src="js/task1.js"></script>
+</body>
+</html>
